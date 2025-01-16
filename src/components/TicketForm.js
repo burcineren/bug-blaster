@@ -7,9 +7,9 @@ export default function TicketForm({ dispatch, editingTicket }) {
 
   useEffect(() => {
     if (editingTicket) {
-      setTitle(editingTicket.title);
-      setDescription(editingTicket.description);
-      setPriority(editingTicket.priority);
+      setTitle(editingTicket.ticket.title);
+      setDescription(editingTicket.ticket.description);
+      setPriority(editingTicket.ticket.priority);
     } else {
       clearForm();
     }
